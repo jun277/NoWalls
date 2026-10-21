@@ -1,4 +1,14 @@
 proxies:
+- name: 'A - 🇷🇺 RU 01 TG: @nodpai'
+  network: ws
+  port: 8880
+  server: 45.67.215.30
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime48.workers.dev
+    path: /
 - name: Telegram 🆔@cnetvpn 🇷🇺
   obfs: salamander
   obfs-password: 09p333uviv2qal0y
@@ -9,24 +19,22 @@ proxies:
   sni: giftcard.gisora.ir
   tls: false
   type: hysteria2
-- name: 🇷🇺RU_1|2.9MB/s
-  port: 1446
-  server: 46.29.166.134
-  skip-cert-verify: true
-  tls: true
-  type: http
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇷🇺RU_2|2.5MB/s
-  network: tcp
-  port: '443'
-  reality-opts:
-    public-key: ygxQyBcJzlLgpSl3MCRDDiFET4TT-3wxa4GdG1obkCY
-    short-id: '!!str '
-  server: 50.7.157.237
-  servername: edge-fr.extazy.net
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇷🇺RU_1|1.5MB/s
+  network: xhttp
+  port: '2053'
+  server: summerculture.net
+  servername: summerculture.net
   tls: true
   type: vless
   udp: true
-  uuid: 258d8fc5-206c-48fd-88df-169dbbe44d3f
+  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
+  xhttp-opts:
+    host: summerculture.net
+    mode: auto
+    path: /api/v1/upload
   xudp: true
