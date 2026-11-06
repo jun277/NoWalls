@@ -80,19 +80,47 @@ proxies:
   port: 443
   server: 193.108.119.78
   type: trojan
-- name: 🇩🇪DE_1|1.2MB/s
-  port: 443
-  server: 172.64.69.89
+- down: ''
+  fingerprint: ''
+  name: 🇩🇪DE_1|4.1MB/s
+  obfs: ''
+  obfs-password: ''
+  password: mhsl
+  port: 14444
+  server: 88.99.213.222
   skip-cert-verify: true
-  tls: true
-  type: http
+  sni: 88.99.213.222
+  type: hysteria2
+  up: ''
+- auth: mhsl
+  name: '🇩🇪 德国 | DEU #1'
+  password: mhsl
+  port: 14444
+  server: 88.99.213.222
+  skip-cert-verify: true
+  sni: bing.com
+  tls: false
+  type: hysteria2
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  down: 1000
+  name: 🇩🇪 德国 | DEU 2
+  port: 54177
+  protocol: udp
+  server: 5.83.129.90
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  up: 500
 - alpn:
   - h2
   client-fingerprint: firefox
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: glush.de1.v1
-  name: 🇩🇪 德国 | DEU
+  name: 🇩🇪 德国 | DEU 4
   network: grpc
   port: 443
   server: falmero.store
@@ -101,37 +129,28 @@ proxies:
   type: vless
   udp: true
   uuid: 8fb19a9e-ca2b-433a-8469-e4c7796033b2
-- name: '🇩🇪 德国 | DEU #2'
-  network: ws
-  port: 8880
-  server: 88.216.66.30
-  tls: false
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: vms.lifetime04.workers.dev
-    path: /
-- client-fingerprint: firefox
-  name: '🇩🇪 德国 | DEU #3'
+- alpn:
+  - h2
+  client-fingerprint: chrome
+  name: '🇩🇪 德国 | DEU #5'
   network: xhttp
   port: 443
-  server: 193.160.208.240
-  servername: 193.160.208.240
+  server: 199.232.239.239
+  servername: community.fastly.steamstatic.com
   tls: true
   type: vless
   udp: true
-  uuid: 4777d90d-265b-4927-a0d1-63f36ed1421c
+  uuid: a55a4d25-76f0-4f0e-d395-3a92c0b34268
   xhttp-opts:
-    mode: auto
-    path: /assets/twru01/
+    host: cloudnet2026.global.ssl.fastly.net
+    mode: packet-up
+    path: /@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel
 - alpn:
   - h2
   client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: ''
-  name: '🇩🇪 德国 | DEU #1'
+  name: '🇩🇪 德国 | DEU #3'
   network: grpc
   port: 443
   server: falmero.store

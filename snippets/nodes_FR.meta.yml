@@ -126,19 +126,33 @@ proxies:
     headers:
       Host: parsa-panel-dy55x.railway1385-2a46.workers.dev
     path: /fp=firefox
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  down: 55
+  name: 🇫🇷 法国 | FRA
+  port: 36699
+  protocol: none
+  server: 163.172.117.163
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria
+  up: 11
 - client-fingerprint: chrome
+  encryption: mlkem768x25519plus.native.0rtt.woF94Ad5-2zSxgXgjcNStC2CeHOpje_TUapVXAcEIVM
   name: '🇫🇷 法国 | FRA #2'
-  network: ws
-  port: 443
-  server: 199.232.78.160
-  servername: cdn.akamai.steamstatic.com
+  network: xhttp
+  port: 2053
+  server: uk.zarqivo.ir
+  servername: Filano.zarqivo.ir
   tls: true
   type: vless
   udp: true
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: Appxdn.global.ssl.fastly.net
+  uuid: c25c2329-3038-4193-9b0c-2e115630c723
+  xhttp-opts:
+    host: uk.zarqivo.ir
+    mode: auto
     path: /
 - name: FR_speednode_0008
   port: 19362

@@ -92,142 +92,72 @@ proxies:
   port: 443
   server: 167.88.61.193
   type: trojan
-- name: 🇺🇸US_1|1.5MB/s
-  port: 443
-  server: 121.127.34.82
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇸US_2|1.7MB/s
-  password: None
-  port: 443
-  server: 167.88.60.242
-  skip-cert-verify: true
-  tls: true
-  type: http
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: firefox
-  name: '🇷🇺 俄罗斯 | RUS #4'
-  network: xhttp
-  port: 2053
-  server: 46.243.233.170
-  servername: ironlever.net
-  tls: true
-  type: vless
-  udp: true
-  uuid: 13718497-ab31-4144-b2dc-3d9315366376
-  xhttp-opts:
-    host: ironlever.net
-    mode: auto
-    path: /api/v1/upload
-    x-padding-bytes: 100-1000
-    x-padding-obfs-mode: false
-- client-fingerprint: chrome
-  name: '🇺🇸 美国 | USA #3'
-  network: ws
-  port: 443
-  server: 146.75.59.186
-  servername: community.fastly.steamstatic.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 33751cb1-43ea-458c-8dc5-0b8993746bce
-  ws-opts:
-    headers:
-      Host: copy_az_channel_NUFiLTER_6i.global.ssl.fastly.net.
-    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
-- name: '🇺🇸 美国 | USA #4'
-  network: ws
-  port: 8880
-  server: 92.53.188.30
-  tls: false
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: vms.lifetime18.workers.dev
-    path: /
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: '🇺🇸 美国 | USA #5'
-  network: xhttp
-  port: 443
-  server: 198.202.24.27
-  servername: nl29.dr-ping.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: 64c5f924-1c24-44a5-acff-2e3ebcd2f807
-  xhttp-opts:
-    host: nl29.dr-ping.ir
-    mode: auto
-    path: /
 - alpn:
   - h3
   auth-str: github.com/Alvin9999-newpac/fanqiang
-  auth_str: github.com/Alvin9999-newpac/fanqiang
-  down: 55
-  name: 🇺🇸 美国 | USA 6
+  down: '55'
+  name: 🇺🇸US_1|1.2MB/s
+  password: github.com/Alvin9999-newpac/fanqiang
   port: 22335
-  protocol: none
   server: 198.200.57.142
+  servername: bing.com
   skip-cert-verify: true
   sni: bing.com
+  tls: true
   type: hysteria
-  up: 11
-- client-fingerprint: unsafe
-  name: '🇺🇸 美国 | USA #6'
-  network: ws
-  port: 2083
-  server: 104.18.35.86
-  servername: vlsovip.1d.mom
+  up: '11'
+- client-fingerprint: chrome
+  name: 🇺🇸US_2|3.5MB/s
+  network: tcp
+  password: 6cddea99-9b18-4d42-8638-131bd9f5374f
+  port: 443
+  server: jp1.8b1c7c70-ecf1-6891-9fa7-68a86662f902.cheathub.net
+  skip-cert-verify: true
+  sni: 8b1c7c70-ecf1-6891-9fa7-68a86662f902.cheathub.net
+  type: trojan
+  udp: true
+- client-fingerprint: firefox
+  name: '🇷🇺 俄罗斯 | RUS #1'
+  network: xhttp
+  port: 443
+  server: 193.160.208.240
+  servername: 193.160.208.240
   tls: true
   type: vless
   udp: true
-  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
-  ws-opts:
-    headers:
-      Host: vlsovip.1d.mom
-    path: /
-- name: '🇺🇸 美国 | USA #7'
-  network: ws
-  port: 8080
-  server: www.digitalocean.com
-  servername: www.digitalocean.com
-  tls: false
-  type: vless
-  udp: true
-  uuid: 2500e602-671c-4654-a602-c518b7282167
-  ws-opts:
-    headers:
-      Host: 2639w-throbbing-band-3840.xphnn6jp.workers.dev
-    path: /
+  uuid: 4777d90d-265b-4927-a0d1-63f36ed1421c
+  xhttp-opts:
+    mode: auto
+    path: /assets/twru01/
 - client-fingerprint: chrome
-  name: '🇺🇸 美国 | USA #8'
+  name: '🇷🇺 俄罗斯 | RUS #2'
   network: ws
   port: 443
-  server: 199.232.249.131
-  servername: cdn.akamai.steamstatic.com
+  server: xsru2.freeddns.org
+  servername: xsru2.freeddns.org
   tls: true
   type: vless
   udp: true
-  uuid: 33751cb1-43ea-458c-8dc5-0b8993746bce
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
   ws-opts:
     headers:
-      Host: copy_az_channel_NUFiLTER_17i.global.ssl.fastly.net.
-    path: /
+      Host: xsru2.freeddns.org
+    path: /wsru
+- auth: f4b80b26-b6d4-49a6-a460-f50efb7a457c
+  name: '🇺🇸 美国 | USA #1'
+  password: f4b80b26-b6d4-49a6-a460-f50efb7a457c
+  port: 443
+  server: 186.246.18.62
+  skip-cert-verify: true
+  sni: hy.cardlist24.shop
+  tls: false
+  type: hysteria2
 - alpn:
   - h3
   auth-str: dongtaiwang.com
   auth_str: dongtaiwang.com
   down: 20
-  name: 🇺🇸 美国 | USA 11
+  name: 🇺🇸 美国 | USA 2
   port: 443
   protocol: none
   server: 137.175.82.43
@@ -235,45 +165,81 @@ proxies:
   sni: bing.com
   type: hysteria
   up: 20
-- name: '🇺🇸 美国 | USA #10'
-  network: ws
-  port: 8880
-  server: 66.235.200.30
-  tls: false
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: vms.lifetime47.workers.dev
-    path: /
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  down: 55
+  name: 🇺🇸 美国 | USA 3
+  port: 443
+  protocol: none
+  server: 137.175.82.44
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria
+  up: 11
+- alpn:
+  - h3
+  auth-str: github.com/Alvin9999-newpac/fanqiang
+  auth_str: github.com/Alvin9999-newpac/fanqiang
+  down: 55
+  name: 🇺🇸 美国 | USA 4
+  port: 22335
+  protocol: none
+  server: 198.200.57.142
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria
+  up: 11
 - client-fingerprint: chrome
-  name: '🇺🇸 美国 | USA #11'
+  name: '🇺🇸 美国 | USA #2'
   network: ws
   port: 443
-  server: freev2.cloudflare.182682.xyz
-  servername: eu-central.862400.xyz
+  server: 104.24.11.68
+  servername: u.srilankangrill.online
   tls: true
   type: vless
   udp: true
-  uuid: 557b8df0-16d9-43d0-b7ca-d08cbea06ead
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
   ws-opts:
     headers:
-      Host: eu-central.862400.xyz
-    path: /announcement?ed=2048
-- name: '🇺🇸 美国 | USA #12'
+      Host: u.srilankangrill.online
+    path: /
+- client-fingerprint: chrome
+  name: '🇺🇸 美国 | USA #3'
   network: ws
-  port: 8880
-  server: 104.129.164.30
-  tls: false
+  port: 443
+  server: msma-hfgetway.hf.space
+  servername: msma-hfgetway.hf.space
+  tls: true
   type: vless
   udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  uuid: 0ad9eed9-ea49-4c97-9ac4-fe0ec7e6f97b
   ws-opts:
     headers:
-      Host: vms.lifetime40.workers.dev
-    path: /
-- name: 🇺🇸 美国 | USA 15
+      Host: msma-hfgetway.hf.space
+    path: /ws/vless
+- alpn:
+  - ''
+  alterId: 0
+  cipher: auto
+  http-opts:
+    headers:
+      Host:
+      - down-cdn.dingtalk.com
+    method: GET
+    path:
+    - /QQqun-737805443
+  name: '🇺🇸 美国 | USA #4'
+  network: http
+  port: 1288
+  server: 107.175.76.215
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 29a72eac-a4d1-4526-8fa0-d3ecc4e38b44
+- name: 🇺🇸 美国 | USA 8
   password: 0324fbc29561
   port: 443
   server: sdf65h46wr.df6h451rh.xin

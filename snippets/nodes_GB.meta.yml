@@ -68,30 +68,46 @@ proxies:
   port: 443
   server: 158.173.24.73
   type: ss
-- name: 🇬🇧GB_1|1012KB/s
+- name: 🇬🇧GB_1|1015KB/s
   password: None
   port: 443
-  server: 185.164.138.156
+  server: 84.17.50.193
   skip-cert-verify: true
   tls: true
   type: http
-- client-fingerprint: qq
+- name: 🇬🇧GB_2|2.8MB/s
+  password: None
+  port: 443
+  server: 212.102.63.61
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_3|1.1MB/s
+  password: None
+  port: 443
+  server: 212.102.63.31
+  skip-cert-verify: true
+  tls: true
+  type: http
+- client-fingerprint: firefox
   name: '🇬🇧 英国 | GBR #1'
   network: xhttp
-  port: 9444
-  server: 77.232.135.123
-  servername: ru2.radiolumens.uk
+  port: 8444
+  server: 82.148.251.245
+  servername: at-86-10.cdn-lab.online
   tls: true
   type: vless
   udp: true
-  uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
+  uuid: 5fa16fdf-5b3c-4f57-988d-b24c6722c91a
   xhttp-opts:
-    path: /beru-uk
+    host: at-86-10.cdn-lab.online
+    mode: auto
+    path: /xh
 - alpn:
   - h2
   - http/1.1
   client-fingerprint: firefox
-  name: '🇬🇧 英国 | GBR #4'
+  name: '🇬🇧 英国 | GBR #2'
   network: xhttp
   port: 8444
   server: at-86-10.cdn-lab.online

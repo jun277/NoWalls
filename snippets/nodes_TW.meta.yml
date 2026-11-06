@@ -21,3 +21,24 @@ proxies:
   sni: baidu.com
   type: anytls
   udp: true
+- alpn:
+  - h3
+  auth: eRlY6dXnQ4QUzVOQi6YDfZWq
+  down: 200
+  name: 🇹🇼 🇨🇳 台湾 | TWN
+  password: eRlY6dXnQ4QUzVOQi6YDfZWq
+  port: 10000
+  server: 18.141.210.28
+  skip-cert-verify: true
+  sni: sg-transit-3.nebulacloud.win
+  type: hysteria2
+  udp: true
+  up: 100
+- name: '🇹🇼 🇨🇳 台湾 | TWN #1'
+  password: eRlY6dXnQ4QUzVOQi6YDfZWq
+  port: 10000
+  server: 18.141.210.28
+  skip-cert-verify: true
+  sni: sg-transit-3.nebulacloud.win
+  tls: false
+  type: hysteria2

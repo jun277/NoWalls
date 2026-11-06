@@ -74,11 +74,3 @@ proxies:
   server: 216.152.147.152
   sni: learn.connectingpeoplewithgreatjobs.com
   type: trojan
-- name: '🇨🇦 加拿大 | CAN #1'
-  password: 5t6i121em5lkmsmk
-  port: 46977
-  server: ca001.zestapp778.com
-  skip-cert-verify: true
-  sni: ca001.zestapp778.com
-  type: trojan
-  udp: true
